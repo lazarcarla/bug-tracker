@@ -1,0 +1,199 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logout-button {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container-role{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 200px;
+}
+
+.container-programmer{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+
+.textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  max-width: 400px;
+  
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto 5px;
+}
+.button:hover {
+  background-color: #0056b3;
+}
+
+ 
+select {
+  padding: 8px 16px; 
+  font-size: 16px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  background-color: #fff; 
+  outline: none; 
+  cursor: pointer; 
+  width: 300px;
+   
+}
+ 
+select option{
+  padding: 8px; 
+  font-size: 16px;
+} 
+
+
+.bug-management-container, 
+.bug-list-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    margin-top: 80px;
+
+  }
+
+.bug-list-container{
+    margin-left: 5%;
+}
+
+@media(max-width: 768px){
+    .bug-management-container{
+        flex-direction: column;
+    }
+    .bug-management-container,
+    .bug-list-container{
+        width: 100%;
+        margin-left: 0;
+        
+    }
+}
+
+.bug-management-page{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.bug-container{
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('Bug-background.png'); 
+  background-size: cover; 
+  background-position: center;
+}
+.urgency-normal {
+  border: 1px solid rgb(63, 183, 63);
+  padding: 2px 5px;
+  border-radius: 9px;
+  color: black;
+  background-color: rgb(63, 183, 63);
+}
+
+.urgency-high {
+  border: 1px solid rgb(227, 145, 22);
+  padding: 2px 5px;
+  border-radius: 9px;
+  color: black;
+  background-color: rgb(227, 145, 22);
+}
+
+.urgency-critical {
+  border: 1px solid red;
+  padding: 2px 5px;
+  border-radius: 9px;
+  color: black;
+  background-color: red;
+}
